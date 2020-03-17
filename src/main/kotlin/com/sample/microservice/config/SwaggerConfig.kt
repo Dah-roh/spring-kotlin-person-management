@@ -1,5 +1,6 @@
 package com.sample.microservice.config
 
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.info.BuildProperties
 import org.springframework.boot.info.GitProperties
 import org.springframework.context.annotation.Bean
@@ -19,7 +20,13 @@ import javax.swing.text.html.HTML.Tag.LI
 
 @Configuration
 @EnableSwagger2
-class SwaggerConfig(var build: Optional<BuildProperties>, var git: Optional<GitProperties>) {
+class SwaggerConfig {
+
+    @Autowired
+    lateinit var build: Optional<BuildProperties>
+    @Autowired
+    lateinit var git: Optional<GitProperties>
+
 
     @Bean
     fun api(): Docket {
