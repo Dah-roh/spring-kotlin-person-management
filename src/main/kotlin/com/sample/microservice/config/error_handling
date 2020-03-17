@@ -1,0 +1,279 @@
+[
+        {
+        "code": "00",
+        "description": "Approved by Financial Institution",
+        "internal_description": "Approved by Financial Institution",
+        "system": false
+        },
+        {
+        "code": "01",
+        "description": "Transaction declined by bank",
+        "internal_description": "Refer to Financial Institution",
+        "system": false
+        },
+        {
+        "code": "05",
+        "description": "Transaction declined by bank",
+        "internal_description": "Do Not Honor",
+        "system": false
+        },
+        {
+        "code": "03",
+        "description": "Transaction declined by bank",
+        "internal_description": "Invalid Merchant",
+        "system": false
+        },
+        {
+        "code": "06",
+        "description": "Transaction Failed!",
+        "internal_description": "Error",
+        "system": false
+        },
+        {
+        "code": "15",
+        "description": "Financial Institution Is Not Recognized",
+        "internal_description": "No Such Financial Institution",
+        "system": false
+        },
+        {
+        "code": "17",
+        "description": "Transaction Has Been Cancelled By the Customer",
+        "internal_description": "Customer Cancellation",
+        "system": false
+        },
+        {
+        "code": "18",
+        "description": "Refund Requested By The Customer",
+        "internal_description": "Customer Dispute",
+        "system": false
+        },
+        {
+        "code": "19",
+        "description": "Please Kindly Re-enter Transaction",
+        "internal_description": "Re-enter Transaction",
+        "system": false
+        },
+        {
+        "code": "20",
+        "description": "Wrong Response From Bank",
+        "internal_description": "Invalid Response from Financial Institution",
+        "system": false
+        },
+        {
+        "code": "21",
+        "description": "Financial Institution Failed To Respond To Transaction",
+        "internal_description": "No Action Taken by Financial Institution",
+        "system": false
+        },
+        {
+        "code": "22",
+        "description": "A Malfunction Might Have Occurred",
+        "internal_description": " Suspected Malfunction",
+        "system": false
+        },
+        {
+        "code": "23",
+        "description": "Transaction Fee Is Not Acceptable",
+        "internal_description": "Unacceptable Transaction Fee",
+        "system": false
+        },
+        {
+        "code": "24",
+        "description": "Update Of File Is Not Supported",
+        "internal_description": "File Update not Supported",
+        "system": false
+        },
+        {
+        "code": "25",
+        "description": "Sorry, Record Was Not Found",
+        "internal_description": "Unable To Locate Record",
+        "system": false
+        },
+        {
+        "code": "26"
+        "description": "Duplicate Record",
+        "internal_description": "Duplicate Record",
+        "system": false
+        },
+        {
+        "code": "27",
+        "description": "Unable To Edit Field",
+        "internal_description": "File Update Field Edit Error",
+        "system": false
+        },
+        {
+        "code": "28",
+        "description": "File Update Access is Locked",
+        "internal_description": "File Update File Locked",
+        "system": false
+        },
+        {
+        "code": "29",
+        "description": "Failed To Update File",
+        "internal_description": "File Update Failed",
+        "system": false
+        },
+        {
+        "code": "30",
+        "description": "Please Check File Format",
+        "internal_description": "Format Error",
+        "system": false
+        },
+        {
+        "code": "31",
+        "description": "Sorry, Your Bank Is Not Supported",
+        "internal_description": "Bank Not Supported",
+        "system": false
+        },
+        {
+        "code": "32",
+        "description": "Your Transaction Was Partially Completed By Bank",
+        "internal_description": "Completed Partially by Financial Institution",
+        "system": false
+        },
+        {
+        "code": "33",
+        "description": "Expired Card!!!",
+        "internal_description": "Expired Card, Pick-Up",
+        "system": false
+        },
+        {
+        "code": "34",
+        "description": "Suspected Fraud!",
+        "internal_description": "Suspected Fraud, Pick-Up",
+        "system": false
+        },
+        {
+        "code": "35",
+        "description": "Please Contact the Acquiring Bank",
+        "internal_description": "Contact Acquirer",
+        "system": false
+        },
+        {
+        "code": "36",
+        "description": "Card Restricted To Protect You From Fraud",
+        "internal_description": "Restricted Card, Pick-Up",
+        "system": false
+        },
+        {
+        "code": "37",
+        "description": "Please Contact Acquiring Bank About Security Issues",
+        "internal_description": "Call Acquirer Security, Pick-Up",
+        "system": false
+        },
+        {
+        "code": "38",
+        "description": "Pin Tries Exceeded",
+        "internal_description": "Pin Tries Exceeded",
+        "system": false
+        },
+        {
+        "code": "39",
+        "description": "No Credit Account Available",
+        "internal_description": "No Credit Account",
+        "system": false
+        },
+        {
+        "code": "40",
+        "description": "That Function Is Not Supported",
+        "internal_description": "Function not Supported",
+        "system": false
+        },
+        {
+        "code": "41",
+        "description": "This Card Has Been Reported as Lost/Missing",
+        "internal_description": "Lost Card",
+        "system": false
+        },
+        {
+        "code": "42",
+        "description": "The Account Type Is Not Valid For This Card",
+        "internal_description": "No Universal Account",
+        "system": false
+        },
+        {
+        "code": "43",
+        "description": "This Card Has Been Reported Stolen",
+        "internal_description": "Stolen Card, Pick-Up",
+        "system": false
+        },
+        {
+        "code": "44",
+        "description": "You Have No Investment Accou"
+        }
+        ]
+        '00' value='Approved by Financial Institution'
+        '01' value='Refer to Financial Institution'
+        '02' value='Refer to Financial Institution, Special Condition'
+        '03' value='Invalid Merchant'
+        '04' value='Pick-up card'
+        '05' value='Do Not Honor'
+        '06' value='Error'
+        '07' value='Pick-Up Card, Special Condition'
+        '08' value='Honor with Identification'
+        '09' value='Request in Progress'
+        '10' value='Approved by Financial Institution, Partial'
+        '11' value='Approved by Financial Institution, VIP'
+        '12' value='Invalid Transaction'
+        '13' value='Invalid Amount'
+        '14' value='Invalid Card Number'
+        '15' value='No Such Financial Institution'
+        '16' value='Approved by Financial Institution, Update Track 3'
+        '17' value='Customer Cancellation'
+        '18' value='Customer Dispute'
+        '19' value='Re-enter Transaction'
+        '20' value='Invalid Response from Financial Institution'
+        '21' value='No Action Taken by Financial Institution'
+        '22' value='Suspected Malfunction'
+        '23' value='Unacceptable Transaction Fee'
+        '24' value='File Update not Supported'
+        '25' value='Unable to Locate Record'
+        '26' value='Duplicate Record'
+        '27' value='File Update Field Edit Error'
+        '28' value='File Update File Locked'
+        '29' value='File Update Failed'
+        '30' value='Format Error'
+        '31' value='Bank Not Supported'
+        '32' value='Completed Partially by Financial Institution'
+        '33' value='Expired Card, Pick-Up'
+        '34' value='Suspected Fraud, Pick-Up'
+        '35' value='Contact Acquirer, Pick-Up'
+        '36' value='Restricted Card, Pick-Up'
+        '37' value='Call Acquirer Security, Pick-Up'
+        '38' value='PIN Tries Exceeded, Pick-Up'
+        '39' value='No Credit Account'
+        '40' value='Function not Supported'
+        '41' value='Lost Card, Pick-Up'
+        '42' value='No Universal Account'
+        '43' value='Stolen Card, Pick-Up'
+        '44' value='No Investment Account'
+        '51' value='Insufficient Funds'
+        '52' value='No Check Account'
+        '53' value='No Savings Account'
+        '54' value='Expired Card'
+        '55' value='Incorrect PIN'
+        '56' value='No Card Record'
+        '57' value='Transaction not Permitted to Cardholder'
+        '58' value='Transaction not Permitted on Terminal'
+        '59' value='Suspected Fraud'
+        '60' value='Contact Acquirer'
+        '61' value='Exceeds Withdrawal Limit'
+        '62' value='Restricted Card'
+        '63' value='Security Violation'
+        '64' value='Original Amount Incorrect'
+        '65' value='Exceeds withdrawal frequency'
+        '66' value='Call Acquirer Security'
+        '67' value='Hard Capture'
+        '68' value='Response Received Too Late'
+        '75' value='PIN tries exceeded'
+        '76' value='Reserved for Future Postilion Use'
+        '77' value='Intervene, Bank Approval Required'
+        '78' value='Intervene, Bank Approval Required for Partial Amount'
+        '90' value='Cut-off in Progress'
+        '91' value='Issuer or Switch Inoperative'
+        '92' value='Routing Error'
+        '93' value='Violation of law'
+        '94' value='Duplicate Transaction'
+        '95' value='Reconcile Error'
+        '96' value='System Malfunction'
+        '98' value='Exceeds Cash Limit'
