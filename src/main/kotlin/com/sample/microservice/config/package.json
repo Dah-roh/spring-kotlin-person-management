@@ -3,7 +3,7 @@
     "code": "00",
     "description": "Approved by Financial Institution",
     "internal_description": "Approved by Financial Institution",
-    "system": false
+    "system": true
   },
   {
     "code": "01",
@@ -132,7 +132,7 @@
     "system": false
   },
   {
-    "code": "26"
+    "code": "26",
     "description": "Duplicate Record",
     "internal_description": "Duplicate Record",
     "system": false

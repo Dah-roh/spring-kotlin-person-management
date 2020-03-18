@@ -6,6 +6,7 @@ import org.springframework.boot.info.GitProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import springfox.documentation.builders.ApiInfoBuilder
+import springfox.documentation.builders.PathSelectors
 import springfox.documentation.builders.RequestHandlerSelectors
 import springfox.documentation.service.ApiInfo
 import springfox.documentation.spi.DocumentationType
@@ -22,10 +23,6 @@ import javax.swing.text.html.HTML.Tag.LI
 @EnableSwagger2
 class SwaggerConfig {
 
-    @Autowired
-    lateinit var build: Optional<BuildProperties>
-    @Autowired
-    lateinit var git: Optional<GitProperties>
 
 
     @Bean
@@ -40,7 +37,7 @@ class SwaggerConfig {
                 .apiInfo(apiInfo(version))
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .paths{ it.equals("persons")}
+                .paths(PathSelectors.ant("/persons/**"))
                 .build()
                 .useDefaultResponseMessages(false)
                 .forCodeGeneration(true)
@@ -49,8 +46,7 @@ class SwaggerConfig {
 
     @Bean
     fun uiConfig(): UiConfiguration {
-        return UiConfiguration(java.lang.Boolean.TRUE, java.lang.Boolean.FALSE, 1, 1, ModelRendering.MODEL, java.lang.Boolean.FALSE,
-        DocExpansion.LIST, java.lang.Boolean.FALSE, null, OperationsSorter.ALPHA, java.lang.Boolean.FALSE, TagsSorter.ALPHA, UiConfiguration.Constants.DEFAULT_SUBMIT_METHODS, null)
+        return UiConfiguration(java.lang.Boolean.TRUE, java.lang.Boolean.FALSE, 1, 1, ModelRendering.MODEL, java.lang.Boolean.FALSE, DocExpansion.LIST, java.lang.Boolean.FALSE, null, OperationsSorter.ALPHA, java.lang.Boolean.FALSE, TagsSorter.ALPHA, UiConfiguration.Constants.DEFAULT_SUBMIT_METHODS, null)
     }
 
     private fun apiInfo(version: String): ApiInfo? {
@@ -60,5 +56,10 @@ class SwaggerConfig {
                 .version(version)
                 .build()
     }
+    @Autowired
+    lateinit var build: Optional<BuildProperties>
+    @Autowired
+    lateinit var git: Optional<GitProperties>
+
 }
 
